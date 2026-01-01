@@ -1,4 +1,4 @@
-# Shobi customer behaviour analysis (summary ver)
+# Shobi customer purchasing behaviour analysis
 
 **Timeframe:** 21 January 2023 – 21 July 2024  
 **Location:** United States  
@@ -9,7 +9,7 @@
 
 ## Project structure
 ```text
-purchasebehaviour_dashboard/
+shobi_purchasebehaviour/
 ├── README.md
 ├── .gitignore
 ├── data/
@@ -33,9 +33,9 @@ purchasebehaviour_dashboard/
 
 ## Project resources
 
-The original dataset used for this analysis is stored [here](data/raw/purchasebehaviour_data.xlsx)  
+The dataset is stored [here](data/raw/purchasebehaviour_data.xlsx)  
 The cleaned and transformed dataset is available [here](data/processed/purchasebehaviour_processeddata.xlsx)  
-The Excel analysis and dashboard can be downloaded [here](reports/purchasebehaviour_dashboard.xlsx)  
+The dashboard can be downloaded [here](reports/purchasebehaviour_dashboard.xlsx)  
 
 Additional documentation  
 - Dataset description [here](docs/dataset_description.md)  
@@ -45,10 +45,10 @@ All charts used in the dashboard are stored [here](docs/visualisations/)
 
 ## Dashboard overview
 
-The final Excel dashboard combines KPIs, charts, and slicers into a single interactive interface:  
-- KPI cards show live Total Revenue, Average Age, Average Rating, Prevous Orders, and Total Customers.  
-- Slicers allow filtering by Category, Season, Location, Gender, Size and Color.  
-- Charts update dynamically for instant comparison and exploration.  
+The final report (dashboard) combines:  
+- KPI cards show live Total revenue, Average age, Average rating, Prevous orders, and Total customers.  
+- Slicers allow filtering by Category, Season, Location, Gender, Size and Colour.  
+- Charts update for instant comparison and exploration.  
 
 ![Dashboard preview](docs/purchasebehaviour_dashboard.png)
 
@@ -56,7 +56,7 @@ The final Excel dashboard combines KPIs, charts, and slicers into a single inter
 
 ## Executive summary
 
-This project provides an analysis of online purchasing behavior for a simulated US e-commerce retailer called Shobi. The aim is to identify the factors driving sales performance, customer satisfaction, and repeat purchases over an 18-month period. The analysis examines how elements such as seasonality, product categories, payment methods, and purchase frequency influence overall sales trends.
+This project provides an analysis of online purchasing behavior for a U.S e-commerce retailer named Shobi. The aim is to identify the factors driving sales performance, customer satisfaction, and repeat purchases over an 18-month period. The analysis examines how seasonality, product categories, payment methods, and purchase frequency influence overall sales trends.
 
 Below is a summary of findings and recommendations.
 
@@ -64,7 +64,7 @@ Below is a summary of findings and recommendations.
 
 ## Business context
 
-The simulated US e-commerce retailer called Shobi sells Clothing, Footwear, Accessories, and Outerwear nationwide.  
+The U.S e-commerce retailer named Shobi sells Clothing, Footwear, Accessories, and Outerwear nationwide.  
 Like most online retailers, it faces challenges in customer retention, seasonal fluctuations, and payment experience satisfaction.
 
 Business questions included:
@@ -84,7 +84,7 @@ Accessories come second with $182,490 (31.5%), followed by Footwear ($91,234 | 1
 
 ![Revenue by category](docs/visualisations/revenue_bycategory.png)
 
-While Clothing and Accessories together account for over 75% of total revenue, their customer ratings are only moderate (around 3.7–3.8), implying potential for quality or delivery improvements.  
+While Clothing and Accessories together account for over 75% of total revenue, their customer ratings are only moderate (around 3.7–3.8), showing potential for quality or delivery improvements.  
 Footwear and Outerwear have smaller revenue shares but could represent premium or niche segments worth nurturing through targeted ads.
 
 - Clothing is the core revenue engine, seasonal restocks and trend-driven promotions here would yield high ROI.  
@@ -97,13 +97,13 @@ Revenue is evenly distributed across the year but shows a mild upward trend in S
 
 ![Revenue by season](docs/visualisations/revenue_byseason.png)
 
-These seasonal swings may correspond to holiday and sale cycles (e.g., Winter sales, Spring fashion launches). Customer ratings are slightly higher in Summer (≈3.8), possibly due to smoother logistics or lighter product types.
+These seasonal swings may correspond to holiday and sale cycles (e.g., winter sales, spring fashion launches). Customer ratings are slightly higher in summer (≈3.8), possibly due to smoother logistics or lighter product types.
 
 - The store’s demand pattern is stable, no severe off-season slump, which indicates good product diversification.  
-- Still, targeted promotions in June and November could exploit natural spending peaks.  
-- Winter products (Outerwear, long sleeves) should be advertised one quarter ahead (September–October).
+- Targeted promotions in June and November could exploit natural spending peaks.  
+- Winter products (outerwear, long sleeves) should be advertised one quarter ahead (September–October).
 
-**Payment method behavior**
+**Payment method behaviour**
 
 Credit Card transactions dominate with $103,555 in revenue across ~1,922 orders, confirming it as the preferred payment option.  
 Cash on Delivery (COD) is the second most common, while PayPal, Venmo, and Bank Transfer make up smaller portions.
@@ -153,13 +153,13 @@ However, some midwestern states show moderate revenue but lower satisfaction (�
 **Overall observations**
 
 - Revenue concentration: 76% of revenue comes from just two categories, a sign of strength but also a risk of overreliance.  
-- Customer satisfaction: Average rating (3.75) suggests room for improvement, likely in delivery speed or product consistency.  
-- Payment & loyalty: Repeat buyers and digital payment users represent the store’s most valuable segments.  
-- Actionable takeaway: Retain frequent buyers, improve UX for mobile payments, and optimise seasonal campaigns by region and category.
+- Customer satisfaction: average rating (3.75) suggests room for improvement, likely in delivery speed or product consistency.  
+- Payment & loyalty: repeat buyers and digital payment users represent the store’s most valuable segments.  
+- Actionable takeaway: retain frequent buyers, improve UX for mobile payments, and optimise seasonal campaigns by region and category.
 
 ---
 
-### Summary of recommendations
+### Summary of recommendations for Shobi
 | Focus area | Action | Expected impact |
 |-------------|--------|-----------------|
 | Retention | Introduce automated reminders and loyalty tiers for frequent buyers | Increased repeat rate |
